@@ -1,41 +1,128 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+      color: #333;
+    }
 
-<title>Portfolio</title>
+    img {
+      width: 70px;
+      border-radius: 50%;
+    }
 
+    h1 {
+      color: #2c3e50;
+    }
+
+    hr {
+      margin: 20px 0;
+    }
+
+    .blog-post {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .blog-post h3 {
+      margin-top: 0;
+    }
+
+    .blog-post a {
+      color: #2c3e50;
+      text-decoration: none;
+    }
+
+    .blog-post a:hover {
+      text-decoration: underline;
+    }
+
+    .project-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ffffff;
+      color: #2c3e50;
+      border: 1px solid transparent;
+      border-color: #2c3e50;
+      border-radius: 6px;
+      font-size: 15px;
+    }
+  </style>
+  
 </head>
-
 <body>
 
-<h1>Eric Nathan A. Delacruz</h1>
-<h3>BSIT 2-5</h3>
-<p> About Me </p>
-<br>
-<hr>
+  <img src="../Image/Pic_Profile.jpg" alt="Profile">
+  <h1>Eric Nathan A. Delacruz</h1>
+  <h3>BSIT 2-5</h3>
 
-<h1> Skills </h1>
-<h3> Programming Languages </h3>
-<ul>
-  <li>Java</li>
-  <li>HTML</li>
-  <li>CSS</li>
-</ul>
+  <p><strong>About Me:</strong> I am a BSIT student learning web development and databases. I enjoy coding and building small projects.</p>
 
-<br>
-<hr>
+  <hr>
 
-<h3> Structured query language </h3>
-<ul>
-  <li>MySQL</li>
-  <li>PostgreSQL</li>
-  <li>Oracle SQL</li>
-</ul>
+  <h1>Skills</h1>
 
-<hr>
+  <h3>Programming Languages</h3>
+  <ul>
+    <li>Java</li>
+    <li>HTML</li>
+    <li>CSS</li>
+  </ul>
 
+  <h3>Structured Query Language</h3>
+  <ul>
+    <li>MySQL</li>
+    <li>PostgreSQL</li>
+    <li>Oracle SQL</li>
+  </ul>
+
+  <hr>
+
+  <h1>Blog</h1>
+
+  <div class="blog-post">
+    <h3>📌 Expanding My HTML & CSS Skills</h3>
+    <p>This week, I worked on improving my personal portfolio for Laboratory 1. 
+       I practiced using internal CSS and focused on better layout, styling, and folder organization. 
+       I'm getting more confident with HTML structure and learning how to make my pages look cleaner and 
+       more professional.
+    </p>
+  </div>
+
+  <div class="blog-post">
+    <h3>📌 Learning PostgreSQL</h3>
+    <p>I’ve been learning about PostgreSQL as part of my database studies. I'm starting to understand SQL commands and how to manage databases.</p>
+  </div>
+
+  <hr>
+
+  <h1>Projects</h1>
+
+  <div class="blog-post">
+    <h3>TF2 Kit Calculator</h3>
+    <p>A web app that helps users calculate the cost of crafting kits in Team Fortress 2. Built using HTML, CSS, and JavaScript.</p>
+    <a href="https://nathancodefoxs.github.io/Tf2_Kit_Calculator/" target="_blank" class="project-button">View Project</a>
+  </div>
+
+  <div class="blog-post">
+    <h3>48 Laws of Power</h3>
+    <p>A digital reference for the book <em>The 48 Laws of Power</em> by Robert Greene. A clean, readable interface for quick browsing.</p>
+    <a href="https://nathancodefoxs.github.io/48_Laws_of_Power/" target="_blank" class="project-button">View Project</a>
+  </div>
+
+  <div class="blog-post">
+    <h3>The Laws of Human Nature</h3>
+    <p>An interactive site summarizing key concepts from <em>The Laws of Human Nature</em>. Ideal for readers and students alike.</p>
+    <a href="https://nathancodefoxs.github.io/The_Laws_of_Human_Nature/" target="_blank" class="project-button">View Project</a>
+  </div>
 
 </body>
 </html>
