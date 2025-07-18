@@ -6,38 +6,56 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
+      background-color: #0f0f0f; 
+      color: #f1f1f1; 
       padding: 20px;
-      color: #333;
     }
 
     img {
       width: 70px;
       border-radius: 50%;
+      border: 2px solid #303030;
     }
 
     h1 {
-      color: #2c3e50;
+      color: #ffffff;
+    }
+
+    h3 {
+      color: #cccccc;
     }
 
     hr {
+      border: 0;
+      height: 1px;
+      background-color: #303030;
       margin: 20px 0;
     }
 
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+
     .blog-post {
-      background-color: #fff;
-      border: 1px solid #ccc;
+      background-color: #1f1f1f;
+      border: 1px solid #303030;
       padding: 15px;
       border-radius: 10px;
       margin-bottom: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
 
     .blog-post h3 {
       margin-top: 0;
+      color: #ffffff;
     }
 
     .blog-post a {
-      color: #2c3e50;
+      color: #ff4e45;
       text-decoration: none;
     }
 
@@ -48,19 +66,78 @@
     .project-button {
       display: inline-block;
       padding: 10px 20px;
-      background-color: #ffffff;
-      color: #2c3e50;
-      border: 1px solid transparent;
-      border-color: #2c3e50;
+      background-color: #272727;
+      color: #ff4e45;
+      border: 1px solid #ff4e45;
       border-radius: 6px;
       font-size: 15px;
+      transition: background-color 0.3s, color 0.3s;
+      cursor: pointer;
+    }
+
+    .project-button:hover {
+      background-color: #ff4e45;
+      color: #0f0f0f;
+    }
+
+    .email-toggle {
+      position: relative;
+      display: inline-block;
+    }
+
+    .email-toggle summary {
+      list-style: none;
+    }
+
+    .email-toggle summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .email-toggle summary.project-button {
+      color: #ff4e45;
+    }
+
+    .email-text {
+      position: absolute;
+      top: 0;
+      left: 105%;
+      background-color: #272727;
+      color: #ffffff;
+      border: 1px solid #ff4e45;
+      border-radius: 6px;
+      padding: 10px 20px;
+      font-size: 15px;
+      white-space: nowrap;
+      display: none;
+      z-index: 10;
+      user-select: text;
+    }
+
+    .email-toggle[open] .email-text {
+      display: block;
+    }
+
+    .top-buttons {
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
   </style>
-  
 </head>
-<body>
 
-  <img src="../Image/Pic_Profile.jpg" alt="Profile">
+<body> 
+  <div class="blog-post top-buttons">
+    <img src="../Image/Pic_Profile.jpg" alt="Profile">
+
+    <details class="email-toggle">
+      <summary class="project-button">Email</summary>
+      <span class="email-text">ericnathan@gmail.com</span>
+    </details>
+
+    <a href="https://github.com/NathanCodeFoxs" target="_blank" class="project-button">GitHub</a>
+    <a href="https://x.com/NathanCodeFoxs" target="_blank" class="project-button">X</a>
+  </div>
+
   <h1>Eric Nathan A. Delacruz</h1>
   <h3>BSIT 2-5</h3>
 
@@ -85,6 +162,16 @@
   </ul>
 
   <hr>
+  <hr>
+
+  <h1>Education</h1>
+
+  <div class="blog-post">
+    <p><strong>Course:</strong> BS in Information Technology (BSIT)</p>
+    <p><strong>Year Level:</strong> 2nd Year, Section 5</p>
+    <p><strong>School:</strong> Cavite State University</p>
+    <p><strong>Expected Graduation:</strong> 2027</p>
+  </div>
 
   <h1>Blog</h1>
 
@@ -99,7 +186,7 @@
 
   <div class="blog-post">
     <h3>📌 Learning PostgreSQL</h3>
-    <p>I’ve been learning about PostgreSQL as part of my database studies. I'm starting to understand SQL commands and how to manage databases.</p>
+    <p>I been learning about PostgreSQL as part of my database studies. I'm starting to understand SQL commands and how to manage databases.</p>
   </div>
 
   <hr>
